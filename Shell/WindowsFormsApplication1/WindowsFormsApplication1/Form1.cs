@@ -66,7 +66,7 @@ namespace WindowsFormsApplication1
                     FileInfo fi = new FileInfo(aFiles[i]);
                     long fileSize = fi.Length;//文件大小
 
-                    File.Copy(aFiles[i], destPath + "\\" + fi.Name);
+                    File.Copy(aFiles[i], destPath + "\\" + fi.Name, true);
                 }
             }
         }
