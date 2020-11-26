@@ -43,6 +43,8 @@
             this.temp_folder = new System.Windows.Forms.TextBox();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.output = new System.Windows.Forms.Label();
+            this.watcher = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // sub_folder
@@ -60,9 +62,9 @@
             // start_button
             // 
             this.start_button.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.start_button.Location = new System.Drawing.Point(0, 350);
+            this.start_button.Location = new System.Drawing.Point(142, 350);
             this.start_button.Name = "start_button";
-            this.start_button.Size = new System.Drawing.Size(492, 52);
+            this.start_button.Size = new System.Drawing.Size(353, 52);
             this.start_button.TabIndex = 1;
             this.start_button.Text = "Start";
             this.start_button.UseVisualStyleBackColor = true;
@@ -189,12 +191,33 @@
             this.output.TabIndex = 15;
             this.output.Text = "Ready";
             // 
+            // watcher
+            // 
+            this.watcher.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.watcher.Location = new System.Drawing.Point(0, 351);
+            this.watcher.Name = "watcher";
+            this.watcher.Size = new System.Drawing.Size(136, 51);
+            this.watcher.TabIndex = 16;
+            this.watcher.Text = "Watch Dog";
+            this.watcher.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(4, 302);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 12);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Hold On..";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(495, 408);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.watcher);
             this.Controls.Add(this.output);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.temp_folder);
@@ -237,6 +260,8 @@
         private System.Windows.Forms.TextBox temp_folder;
         private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.Label output;
+        private System.Windows.Forms.Button watcher;
+        private System.Windows.Forms.Label label3;
     }
 }
 
